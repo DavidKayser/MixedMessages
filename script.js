@@ -1,3 +1,4 @@
+//Array for subject of the story
 const subject = [
     "David",
     "Melissa",
@@ -17,6 +18,7 @@ const subject = [
     "A judge"
 ];
 
+//Array for action of the story
 const action = [
     "walked into a bar",
     "ate a sandwhich",
@@ -29,6 +31,7 @@ const action = [
     "went out for sushi"
 ]
 
+//Array for end of the story
 const end = [
     "and died.",
     "and had a geat time.",
@@ -40,11 +43,15 @@ const end = [
     "and became rich."
 ]
 
+//Function to randomly select story elements and combine them
 function messageGenerator() {
+    //Randomly gnerate array index
     const subjectSelection = Math.floor(Math.random() * subject.length);
     const actionSelection = Math.floor(Math.random() * action.length);
     const endSelection = Math.floor(Math.random() * end.length);
+    //Return combined message from randomly generated index
     return `${subject[subjectSelection]} ${action[actionSelection]} ${end[endSelection]}`
 }
 
+//Log full message to the console
 console.log(messageGenerator());
