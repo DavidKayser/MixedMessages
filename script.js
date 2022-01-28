@@ -43,14 +43,17 @@ const end = [
     "and became rich."
 ]
 
+//Function to generate a random number
+let randomNumber = maxNum => Math.floor(Math.random() * maxNum);
+
 //Function to randomly select story elements and combine them
 function messageGenerator() {
-    //Randomly gnerate array index
-    const subjectSelection = Math.floor(Math.random() * subject.length);
-    const actionSelection = Math.floor(Math.random() * action.length);
-    const endSelection = Math.floor(Math.random() * end.length);
+    //Randomly generate array index
+    const subjectSelection = randomNumber(subject.length);
+    const actionSelection = randomNumber(action.length);
+    const endSelection = randomNumber(end.length);
     //Return combined message from randomly generated index
-    return `${subject[subjectSelection]} ${action[actionSelection]} ${end[endSelection]}`
+    return `${subject[subjectSelection]} ${action[actionSelection]} ${end[endSelection]}`;
 }
 
 //Log full message to the console
