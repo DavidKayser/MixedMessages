@@ -39,3 +39,12 @@ const end = [
     "and regretting it immediatly.",
     "and became rich."
 ]
+
+function messageGenerator() {
+    const subjectSelection = Math.floor(Math.random() * subject.length);
+    const actionSelection = Math.floor(Math.random() * action.length);
+    const endSelection = Math.floor(Math.random() * end.length);
+    return `${subject[subjectSelection]} ${action[actionSelection]} ${end[endSelection]}`
+}
+
+console.log(messageGenerator());
