@@ -53,12 +53,15 @@ function messageGenerator() {
     const actionSelection = randomNumber(action.length);
     const endSelection = randomNumber(end.length);
     //Return combined message from randomly generated index
-    return `${subject[subjectSelection]} ${action[actionSelection]} ${end[endSelection]}`;
+    return `"${subject[subjectSelection]} ${action[actionSelection]} ${end[endSelection]}"`;
 }
 
-//Log full message to the console
-console.log(messageGenerator());
-document.getElementById('generateStory').addEventListener('click', function(){
+//Generate a story to #generateStory element
+const generateStory = document.getElementById('generateStory');
+generateStory.addEventListener('click', function(){
+    const storyBox = document.getElementById('story');
     const story = messageGenerator();
-    document.getElementById('story').innerHTML = story;
+
+    storyBox.classList.add('animateColor');
+    storyBox.innerHTML = story;
 });
