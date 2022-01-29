@@ -39,7 +39,7 @@ const end = [
     "and started a new company",
     "and found the love of their life",
     "and became a famous writer",
-    "and regretting it immediatly.",
+    "and regretted it immediatly.",
     "and became rich."
 ]
 
