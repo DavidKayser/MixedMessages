@@ -12,4 +12,4 @@ This is a random story generator.
 + Node.js 17.3.0
 
 ## Launch
-To run this program, have node installed and type node script.js in the terminal from the directory this project is located in.
+To run this program simply click the "click" button and a story will generate.
