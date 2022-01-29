@@ -9,6 +9,7 @@ body{
     color:rgb(42, 42, 42);
     margin:0;
     font-family:Helvetica, sans-serif;
+    padding:10px;
 }
 
 #main{
@@ -23,7 +24,7 @@ h1{
     font-size:40px;
     font-size:4rem;
     margin:0;
-    border: 2px solid rgb(42, 42, 42);
+    border: 4px solid rgb(42, 42, 42);
     padding:5px 10px;
 }
 
@@ -52,17 +53,28 @@ button#generateStory{
     padding:20px;
     margin:50px auto 0;
     min-height:20px;
-    background:white;
-    color:white;
+    background:rgb(42, 42, 42);
+    color:rgb(42, 42, 42);
     min-width:50%;
     line-height: 20px;
     line-height: 2rem;
+    opacity:0;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
-#story.animateColor{
-    background:rgb(42, 42, 42);
-    -webkit-transition: all 1s linear;
-    -moz-transition: all 1s linear;
-    -o-transition: all 1s linear;
-    transition: all 1s linear;
+#story.fadeIn{
+    opacity: 1;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+#story.colorChange{
+    color:white;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }

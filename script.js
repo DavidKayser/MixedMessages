@@ -58,9 +58,24 @@ function messageGenerator() {
 
 //Generate a story to #generateStory element and animate story box color
 const generateStory = document.getElementById('generateStory');
+let counter = 0;
 generateStory.addEventListener('click', function(){
+    counter++;
     const storyBox = document.getElementById('story');
     const story = messageGenerator();
-    storyBox.classList.add('animateColor');
-    storyBox.innerHTML = story;
+    
+    
+    if (counter <= 1) {
+        storyBox.innerHTML = story;
+        storyBox.classList.add('fadeIn');
+        storyBox.classList.add('colorChange');
+        console.log('initial add in');   
+    } else{
+        storyBox.classList.remove('colorChange');
+        setTimeout(() => {
+            storyBox.classList.add('colorChange');
+            storyBox.innerHTML = story;
+        }, 500);
+    }
+    
 });
