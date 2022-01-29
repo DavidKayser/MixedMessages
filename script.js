@@ -56,12 +56,11 @@ function messageGenerator() {
     return `"${subject[subjectSelection]} ${action[actionSelection]} ${end[endSelection]}"`;
 }
 
-//Generate a story to #generateStory element
+//Generate a story to #generateStory element and animate story box color
 const generateStory = document.getElementById('generateStory');
 generateStory.addEventListener('click', function(){
     const storyBox = document.getElementById('story');
     const story = messageGenerator();
-
     storyBox.classList.add('animateColor');
     storyBox.innerHTML = story;
 });
