@@ -56,7 +56,7 @@ function messageGenerator() {
     return `"${subject[subjectSelection]} ${action[actionSelection]} ${end[endSelection]}"`;
 }
 
-//Generate a story to #generateStory element and animate story box color
+//Generate a story to #generateStory element and fade in and out new story
 const generateStory = document.getElementById('generateStory');
 let counter = 0;
 generateStory.addEventListener('click', function(){
