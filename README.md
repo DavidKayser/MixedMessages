@@ -9,7 +9,8 @@ This is a random story generator.
 
 ## Technologies
 + JavaScript
-+ Node.js 17.3.0
++ HTML5
++ CSS3
 
 ## Launch
 To run this program simply click the "click" button and a story will generate.
