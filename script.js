@@ -35,10 +35,10 @@ const action = [
 const end = [
     "and died.",
     "and had a geat time.",
-    "and went into hiding",
-    "and started a new company",
-    "and found the love of their life",
-    "and became a famous writer",
+    "and went into hiding.",
+    "and started a new company.",
+    "and found the love of their life.",
+    "and became a famous writer.",
     "and regretted it immediatly.",
     "and became rich."
 ]
