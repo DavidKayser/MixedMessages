@@ -58,3 +58,7 @@ function messageGenerator() {
 
 //Log full message to the console
 console.log(messageGenerator());
+document.getElementById('generateStory').addEventListener('click', function(){
+    const story = messageGenerator();
+    document.getElementById('story').innerHTML = story;
+});
